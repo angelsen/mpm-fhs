@@ -9,9 +9,9 @@ with lib; let
 
   matlabInstallPath = "${config.home.homeDirectory}/matlab";
 
-  nix-matlab = pkgs.fetchgit {
+  nix-matlab = pkgs.fetchGit {
     url = "https://gitlab.com/doronbehar/nix-matlab.git";
-    sha256 = "sha256-5ypOb/ycBjHY+63NZC+N7LZ1sgCQtHdcbJyiJGqLI3Y=";
+    ref = "master";
   };
 
   matlabDeps = import "${nix-matlab}/common.nix" pkgs;
