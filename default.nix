@@ -11,7 +11,7 @@ with lib; let
 
   nix-matlab = pkgs.fetchgit {
     url = "https://gitlab.com/doronbehar/nix-matlab.git";
-    sha256 = "sha256-WQ8Rg7EPJSyoqSB5tNW7+/1kCuPRIe12BEdkKAe68cQ=";
+    sha256 = "sha256-5ypOb/ycBjHY+63NZC+N7LZ1sgCQtHdcbJyiJGqLI3Y=";
   };
 
   matlabDeps = import "${nix-matlab}/common.nix" pkgs;
