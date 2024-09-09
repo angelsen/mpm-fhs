@@ -18,7 +18,7 @@ with lib; let
 
   mpmBinary = pkgs.stdenv.mkDerivation {
     pname = "mpm";
-    version = "1.1";
+    version = "1.0";
 
     src = pkgs.fetchurl {
       url = "https://www.mathworks.com/mpm/glnxa64/mpm";
